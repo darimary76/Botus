@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 node_modules
 dist
 yarn.lock
 launcher_accounts.json
+=======
+node_modules
+dist
+yarn.lock
+launcher_accounts.json
+>>>>>>> b02b19ac9d71814d7848550858fe606fbf9bd7d1

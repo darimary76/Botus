@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 {
 	"ext": "ts",
 	"exec": "ts-node src"
 }
+=======
+{
+	"ext": "ts",
+	"exec": "ts-node src"
+}
+>>>>>>> b02b19ac9d71814d7848550858fe606fbf9bd7d1

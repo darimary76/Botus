@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
 	"name": "minecraft-helper-bot",
 	"version": "1.0.1",
@@ -64,3 +65,71 @@
 		"vec3": "^0.1.8"
 	}
 }
+=======
+{
+	"name": "minecraft-helper-bot",
+	"version": "1.0.1",
+	"main": "dist",
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/barbarbar338/minecraft-helper-bot"
+	},
+	"author": {
+		"email": "hi@338.rocks",
+		"name": "Barış DEMİRCİ",
+		"url": "https://338.rocks"
+	},
+	"license": "GPL-3.0",
+	"description": "🤖 A Minecraft bot that helps you about everything",
+	"scripts": {
+		"dev": "ts-node src",
+		"dev:watch": "nodemon",
+		"prebuild": "rimraf dist",
+		"build": "tsc",
+		"postbuild": "copyfiles -u 1 src/**/*.yaml dist/",
+		"start": "node dist",
+		"format": "prettier --write .",
+		"format:watch": "onchange . -- prettier --write {{changed}}",
+		"lint": "eslint --fix .",
+		"lint:watch": "onchange . -- eslint --fix {{changed}}",
+		"update": "taze latest -w"
+	},
+	"devDependencies": {
+		"@types/node": "^20.2.5",
+		"@typescript-eslint/eslint-plugin": "^5.59.8",
+		"@typescript-eslint/parser": "^5.59.8",
+		"copyfiles": "^2.4.1",
+		"eslint": "^8.41.0",
+		"eslint-config-prettier": "^8.8.0",
+		"eslint-plugin-import": "^2.27.5",
+		"nodemon": "^2.0.22",
+		"onchange": "^7.1.0",
+		"prettier": "^2.8.8",
+		"rimraf": "^5.0.1",
+		"taze": "^0.10.1",
+		"ts-node": "^10.9.1",
+		"typescript": "^5.0.4"
+	},
+	"dependencies": {
+		"@hammerhq/localization": "^0.1.5",
+		"@hammerhq/logger": "^0.1.5",
+		"bargs": "^1.0.4",
+		"dotenv": "^16.0.3",
+		"minecraft-data": "^3.33.0",
+		"minecraft-protocol": "^1.41.2",
+		"mineflayer": "^4.8.1",
+		"mineflayer-armor-manager": "^1.4.2",
+		"mineflayer-auto-eat": "^3.3.6",
+		"mineflayer-collectblock": "^1.4.1",
+		"mineflayer-pathfinder": "^2.4.3",
+		"mineflayer-pvp": "^1.3.2",
+		"mineflayer-statemachine": "^1.7.0",
+		"mineflayer-web-inventory": "^1.8.4",
+		"prismarine-entity": "^2.2.0",
+		"prismarine-item": "^1.12.1",
+		"prismarine-viewer": "^1.25.0",
+		"vec3": "^0.1.8"
+	}
+}
+>>>>>>> b02b19ac9d71814d7848550858fe606fbf9bd7d1
