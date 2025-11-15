@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": false,
+    "removeComments": false,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2022",
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "typeRoots": ["node_modules/@types", "src/@types"],
+    "skipLibCheck": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
