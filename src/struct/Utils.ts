@@ -120,7 +120,7 @@ export class Utils {
 
 				manager.setCollecting(true);
 
-				manager.bot.collectBlock.collect(targets, (err) => {
+				manager.bot.collectBlock.collect(targets.filter(t => t !== null), (err) => {
 					manager.setCollecting(false);
 					if (err) {
 						reject(err);
